@@ -17,9 +17,7 @@ def eng_lang():
 
 @dp.callback_query_handler(text='commands_eng')
 async def command_eng(callback: types.CallbackQuery):
-    await callback.message.answer("You need help?\n"
-                                  "/start - restarting bot\n"
-                                  "/about - description of our services\n")
+    await callback.message.answer("You need help?\n/start - restarting bot\n/about - description of our services\n")
     await callback.message.delete()
 
 
@@ -43,3 +41,4 @@ async def contact_eng(callback: types.CallbackQuery):
     button_tg = InlineKeyboardButton(text="Telegram", url="https://t.me/ArbatskiyArt")
     markup_contacts_eng.add(button_inst, button_tg)
     await callback.message.answer("To contact us, you can follow the links below :", reply_markup=markup_contacts_eng)
+
