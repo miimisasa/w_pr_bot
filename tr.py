@@ -1,7 +1,7 @@
 from aiogram import types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from pr_bot.config import dp
+from config import dp
 
 
 def tr_lang():

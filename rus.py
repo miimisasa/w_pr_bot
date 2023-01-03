@@ -1,8 +1,7 @@
 from aiogram import types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from pr_bot.config import dp
-
+from config import *
 
 def rus_lang():
     @dp.callback_query_handler(text='rus')
